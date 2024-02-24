@@ -2,6 +2,8 @@
 // var randomImageSource = "dice" + randomNumber + ".png";
 // document.querySelectorAll("img")[0].setAttribute("src", randomImageSource);
 
+// const { Error } = require("mongoose")
+
 
 // var randomNumber2 = Math.floor(Math.random()*6)+1;
 // var randomImageSource2 = "dice" + randomNumber2 + ".png";
@@ -172,7 +174,7 @@
 
 
 // console.log("we are fetching weather");
-// harry();
+// ekayz();
 
 
 
@@ -213,13 +215,64 @@
 
 
 
+// let p11 = new Promise((resolve, reject) => {
+//     console.log('your promise is pending');
+
+//     setTimeout(()=>{
+//         console.log('promise is done')
+//       resolve(7875)
+
+
+//     },2000)
+// })
+
+// p11.catch((Error)=>{
+//     console.log('hhhhh')
+
+// })
+
+// async function ekayz(){
+
+// let delhiWeather = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('27 deg')
+//     },2000)
+// })
+// let satnaWeather = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         reject((new Error('this is an error')));
+//     },5000)
+// })
+
+// delhiWeather.then(alert)
+// satnaWeather.catch((Error)=>{
+//     console.log('this is an error')
+
+// })
+// // satnaWeather.catch((error)=>{
+// //     console.log("error")
+
+
+// }
+
+// console.log('fetching weather')
+// ekayz();
 
 
 
 
 
+const express = require('express');
+const app = express();
 
 
+app.get('/',(req,res)=>{
+    res.send('hello world')
+});
+
+app.listen(3000, ()=>{
+    console.log('server has started')
+})
 
 
 

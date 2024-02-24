@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekayz_7875</title>
+</head>
+<body>
+    <h1>hi this is ekayz</h1>
+    <button id="hh">stop</button>
+
+</body>
+<script>
+
+// setTimeout(()=>{
+//     document.querySelector('h1').innerHTML = "hiiii"
+// },2000);
+
+const chnageText = document.querySelector('h1').innerHTML = 'hiii'
+const changeMe = setTimeout(chnageText,2000);
+
+
+document.querySelector('#hh').
+addEventListener('click',function(){
+    clearTimeout(changeMe,2000);
+    console.log('stopped');
+
+})
+
+
+
+    </script>
+</html>
